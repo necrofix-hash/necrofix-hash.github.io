@@ -179,55 +179,45 @@ img { max-width: 100%; display: block; }
   display: flex;
   align-items: flex-end;
   padding: 28px;
-  transition: filter .3s ease;
+  background-color: #2a2520;
+  background-size: cover;
+  background-position: center;
+  transition: filter .3s ease, transform .6s ease;
+}
+
+.work-thumb::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 40%, rgba(0,0,0,0.45) 100%);
+  pointer-events: none;
+  transition: background .3s ease;
 }
 
 .work-card:hover .work-thumb { filter: brightness(1.05); }
 
 .work-number {
+  position: relative;
+  z-index: 1;
   font-family: 'Cormorant Garamond', serif;
   font-size: 48px;
   font-style: italic;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.95);
   line-height: 1;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
 }
 
-/* Individual thumb themes */
-.work-thumb-awakening {
-  background:
-    radial-gradient(circle at 30% 20%, rgba(255,220,170,0.25), transparent 50%),
-    linear-gradient(135deg, #3a2a1e 0%, #1f1510 100%);
-}
+/* Individual thumb images */
+.work-thumb-awakening { background-image: url('images/thumb_01.jpg'); }
+.work-thumb-lawyer    { background-image: url('images/thumb_02.jpg'); }
+.work-thumb-medicin   { background-image: url('images/thumb_03.jpg'); }
+.work-thumb-webbill   { background-image: url('images/thumb_04.jpg'); }
+.work-thumb-mute      { background-image: url('images/thumb_05.jpg'); }
 
-.work-thumb-lawyer {
-  background:
-    radial-gradient(circle at 70% 30%, rgba(200,175,140,0.2), transparent 55%),
-    linear-gradient(135deg, #1b2838 0%, #0f1820 100%);
-}
-
-.work-thumb-medicin {
-  background:
-    radial-gradient(circle at 30% 70%, rgba(230,210,170,0.25), transparent 55%),
-    linear-gradient(135deg, #5a4530 0%, #2e2418 100%);
-}
-
-.work-thumb-webbill {
-  background:
-    radial-gradient(circle at 50% 30%, rgba(180,220,200,0.25), transparent 55%),
-    linear-gradient(135deg, #2e4a3a 0%, #1a2a20 100%);
-}
-
-.work-thumb-mute {
-  background:
-    radial-gradient(circle at 40% 40%, rgba(240,235,225,0.3), transparent 60%),
-    linear-gradient(135deg, #d9d3c7 0%, #b8b0a1 100%);
-}
-
-.work-thumb-mute .work-number { color: rgba(60, 55, 45, 0.7); }
-
+/* Fostory stays as gradient (external site, no local image) */
 .work-thumb-fostory {
   background:
-    radial-gradient(circle at 70% 70%, rgba(160,180,255,0.25), transparent 55%),
+    radial-gradient(circle at 70% 70%, rgba(160,180,255,0.3), transparent 55%),
     linear-gradient(135deg, #2a2540 0%, #15121f 100%);
 }
 

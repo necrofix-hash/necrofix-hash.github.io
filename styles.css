@@ -213,13 +213,7 @@ img { max-width: 100%; display: block; }
 .work-thumb-medicin   { background-image: url('images/thumb_03.jpg'); }
 .work-thumb-webbill   { background-image: url('images/thumb_04.jpg'); }
 .work-thumb-mute      { background-image: url('images/thumb_05.jpg'); }
-
-/* Fostory stays as gradient (external site, no local image) */
-.work-thumb-fostory {
-  background:
-    radial-gradient(circle at 70% 70%, rgba(160,180,255,0.3), transparent 55%),
-    linear-gradient(135deg, #2a2540 0%, #15121f 100%);
-}
+.work-thumb-fostory   { background-image: url('images/thumb_06.jpg'); }
 
 .work-info { padding: 0 4px; }
 

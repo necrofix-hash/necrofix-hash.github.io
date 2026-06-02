@@ -241,6 +241,169 @@ img { max-width: 100%; display: block; }
   margin: 0;
 }
 
+/* ---------- Works tabs ---------- */
+.works-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: -32px 0 56px;
+}
+
+.works-tab {
+  font-family: 'Inter', 'Pretendard Variable', Pretendard, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--ink-mute);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 10px 22px;
+  cursor: pointer;
+  transition: color .2s ease, background .2s ease, border-color .2s ease;
+}
+
+.works-tab:hover { color: var(--ink); }
+
+.works-tab.is-active {
+  color: var(--bg);
+  background: var(--ink);
+  border-color: var(--ink);
+}
+
+.works-tab-count {
+  font-size: 12px;
+  opacity: 0.65;
+  margin-left: 2px;
+  vertical-align: 1px;
+}
+
+.works-panel { display: none; }
+.works-panel.is-active { display: grid; }
+
+/* ---------- Detail page cards ---------- */
+.detail-grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 44px 32px;
+}
+
+.detail-card {
+  display: block;
+  transition: transform .4s ease;
+}
+
+.detail-card:hover { transform: translateY(-4px); }
+
+.detail-thumb {
+  aspect-ratio: 4 / 3;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background: var(--bg-alt);
+  box-shadow: inset 0 0 0 1px var(--line);
+}
+
+.detail-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .6s ease;
+}
+
+.detail-card:hover .detail-thumb img { transform: scale(1.04); }
+
+/* ---------- Detail service CTA ---------- */
+.detail-cta {
+  grid-column: 1 / -1;
+  margin-top: 28px;
+  padding: 64px 40px;
+  background: var(--bg-alt);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.detail-cta .section-label { margin-bottom: 14px; }
+
+.detail-cta-title {
+  font-size: clamp(22px, 3vw, 30px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 44px;
+}
+
+.tier-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 760px;
+  margin: 0 auto 36px;
+  text-align: left;
+}
+
+.tier {
+  position: relative;
+  padding: 28px 24px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+.tier--featured {
+  background: var(--ink);
+  border-color: var(--ink);
+}
+
+.tier-badge {
+  position: absolute;
+  top: -11px;
+  left: 24px;
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--bg);
+  background: var(--ink-mute);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.tier--featured .tier-badge { background: #b89b6e; color: #1a1a1a; }
+
+.tier-name {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+}
+
+.tier-size {
+  display: block;
+  font-size: 13px;
+  color: var(--ink-mute);
+  margin-bottom: 16px;
+}
+
+.tier-desc {
+  font-size: 14px;
+  color: var(--ink-soft);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.tier--featured .tier-name { color: var(--bg); }
+.tier--featured .tier-size { color: rgba(255,255,255,0.6); }
+.tier--featured .tier-desc { color: rgba(255,255,255,0.82); }
+
+.tier-note {
+  font-size: 14px;
+  color: var(--ink-mute);
+  margin: 0 0 32px;
+}
+
 /* ---------- About ---------- */
 .about {
   padding: 120px 0;
@@ -379,6 +542,20 @@ img { max-width: 100%; display: block; }
     gap: 48px;
   }
 
+  .detail-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 20px;
+  }
+
+  .detail-cta { padding: 48px 24px; }
+
+  .tier-row {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .tier-badge { top: -10px; }
+
   .about-grid {
     grid-template-columns: 1fr;
     gap: 48px;
@@ -394,4 +571,6 @@ img { max-width: 100%; display: block; }
   .brand { font-size: 22px; }
   .nav { gap: 16px; }
   .hero-desc, .contact-desc { font-size: 15px; }
+  .detail-grid { grid-template-columns: 1fr; }
+  .works-tabs { margin-top: -16px; }
 }

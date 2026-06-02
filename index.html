@@ -48,7 +48,16 @@
         <h2 class="section-title">최근 작업</h2>
       </div>
 
-      <div class="work-grid">
+      <div class="works-tabs" role="tablist">
+        <button class="works-tab is-active" role="tab" aria-selected="true" data-panel="panel-web">
+          웹사이트 <span class="works-tab-count">6</span>
+        </button>
+        <button class="works-tab" role="tab" aria-selected="false" data-panel="panel-detail">
+          상세페이지 <span class="works-tab-count">10</span>
+        </button>
+      </div>
+
+      <div class="work-grid works-panel is-active" id="panel-web" role="tabpanel">
 
         <a href="https://necrofix-hash.github.io/Awakening/" target="_blank" rel="noopener" class="work-card">
           <div class="work-thumb work-thumb-awakening">
@@ -117,6 +126,125 @@
         </a>
 
       </div>
+
+      <div class="detail-grid works-panel" id="panel-detail" role="tabpanel" hidden>
+
+        <a href="https://necrofix-hash.github.io/detail/cosmetics_goyo/" target="_blank" rel="noopener" class="detail-card">
+          <div class="detail-thumb"><img src="images/detail_thumbs/cosmetics_goyo.jpg" alt="GOYO 고요 색조화장품 상세페이지" loading="lazy"></div>
+          <div class="work-info">
+            <span class="work-tag">코스메틱</span>
+            <h3 class="work-title">GOYO 고요</h3>
+            <p class="work-desc">미니멀 K-럭셔리 색조 브랜드 상세페이지</p>
+          </div>
+        </a>
+
+        <a href="https://necrofix-hash.github.io/detail/health_yeonheon/" target="_blank" rel="noopener" class="detail-card">
+          <div class="detail-thumb"><img src="images/detail_thumbs/health_yeonheon.jpg" alt="YEONHEON 연헌 홍삼 상세페이지" loading="lazy"></div>
+          <div class="work-info">
+            <span class="work-tag">건강 · 홍삼</span>
+            <h3 class="work-title">YEONHEON 연헌</h3>
+            <p class="work-desc">6년근 홍삼 프리미엄 브랜드 상세페이지</p>
+          </div>
+        </a>
+
+        <a href="https://necrofix-hash.github.io/detail/olive_olivante/" target="_blank" rel="noopener" class="detail-card">
+          <div class="detail-thumb"><img src="images/detail_thumbs/olive_olivante.jpg" alt="OLIVANTE 올리브오일 상세페이지" loading="lazy"></div>
+          <div class="work-info">
+            <span class="work-tag">식품 · 오일</span>
+            <h3 class="work-title">OLIVANTE</h3>
+            <p class="work-desc">프리미엄 엑스트라버진 올리브오일 상세페이지</p>
+          </div>
+        </a>
+
+        <a href="https://necrofix-hash.github.io/detail/cosmetic_obelie/" target="_blank" rel="noopener" class="detail-card">
+          <div class="detail-thumb"><img src="images/detail_thumbs/cosmetic_obelie.jpg" alt="OBÉLIE 오벨리 앰플 상세페이지" loading="lazy"></div>
+          <div class="work-info">
+            <span class="work-tag">코스메틱 · 앰플</span>
+            <h3 class="work-title">OBÉLIE 오벨리</h3>
+            <p class="work-desc">파리 감성 앰플 에센스 상세페이지</p>
+          </div>
+        </a>
+
+        <a href="https://necrofix-hash.github.io/detail/beauty_ampoule/" target="_blank" rel="noopener" class="detail-card">
+          <div class="detail-thumb"><img src="images/detail_thumbs/beauty_ampoule.jpg" alt="루미에르 앰플 상세페이지" loading="lazy"></div>
+          <div class="work-info">
+            <span class="work-tag">뷰티 · 스킨케어</span>
+            <h3 class="work-title">루미에르 앰플</h3>
+            <p class="work-desc">집중 케어 앰플 상세페이지</p>
+          </div>
+        </a>
+
+        <a href="https://necrofix-hash.github.io/detail/beauty_handwash_v2/" target="_blank" rel="noopener" class="detail-card">
+          <div class="detail-thumb"><img src="images/detail_thumbs/beauty_handwash_v2.jpg" alt="루미에르 핸드워시 상세페이지" loading="lazy"></div>
+          <div class="work-info">
+            <span class="work-tag">뷰티 · 핸드케어</span>
+            <h3 class="work-title">루미에르 핸드워시</h3>
+            <p class="work-desc">약산성 핸드워시 상세페이지</p>
+          </div>
+        </a>
+
+        <a href="https://necrofix-hash.github.io/detail/food_sesame_oil/" target="_blank" rel="noopener" class="detail-card">
+          <div class="detail-thumb"><img src="images/detail_thumbs/food_sesame_oil.jpg" alt="향기름 참기름 들기름 상세페이지" loading="lazy"></div>
+          <div class="work-info">
+            <span class="work-tag">식품</span>
+            <h3 class="work-title">향기름</h3>
+            <p class="work-desc">국산 참기름·들기름 상세페이지</p>
+          </div>
+        </a>
+
+        <a href="https://necrofix-hash.github.io/detail/food_soup_v2/" target="_blank" rel="noopener" class="detail-card">
+          <div class="detail-thumb"><img src="images/detail_thumbs/food_soup_v2.jpg" alt="나의수프 수제 스프 상세페이지" loading="lazy"></div>
+          <div class="work-info">
+            <span class="work-tag">식품</span>
+            <h3 class="work-title">나의수프</h3>
+            <p class="work-desc">1인분 수제 스프 상세페이지</p>
+          </div>
+        </a>
+
+        <a href="https://necrofix-hash.github.io/detail/health_fiber_v2/" target="_blank" rel="noopener" class="detail-card">
+          <div class="detail-thumb"><img src="images/detail_thumbs/health_fiber_v2.jpg" alt="데일리 파이버 식이섬유 상세페이지" loading="lazy"></div>
+          <div class="work-info">
+            <span class="work-tag">건강</span>
+            <h3 class="work-title">데일리 파이버</h3>
+            <p class="work-desc">식이섬유 건강기능식품 상세페이지</p>
+          </div>
+        </a>
+
+        <a href="https://necrofix-hash.github.io/detail/pet_bubbleclean/" target="_blank" rel="noopener" class="detail-card">
+          <div class="detail-thumb"><img src="images/detail_thumbs/pet_bubbleclean.jpg" alt="퍼포우 반려동물 버블세제 상세페이지" loading="lazy"></div>
+          <div class="work-info">
+            <span class="work-tag">반려동물</span>
+            <h3 class="work-title">퍼포우 버블세제</h3>
+            <p class="work-desc">반려동물 주방세제 상세페이지</p>
+          </div>
+        </a>
+
+        <div class="detail-cta">
+          <span class="section-label">Detail Page Service</span>
+          <h3 class="detail-cta-title">분량과 연출에 따라 세 가지로 제작합니다.</h3>
+          <div class="tier-row">
+            <div class="tier">
+              <span class="tier-name">STANDARD</span>
+              <span class="tier-size">세로 10,000px</span>
+              <p class="tier-desc">핵심만 담은 기본 구성<br>인트로·배너 디자인</p>
+            </div>
+            <div class="tier">
+              <span class="tier-name">DELUXE</span>
+              <span class="tier-size">세로 40,000px</span>
+              <p class="tier-desc">스토리텔링·비교표·Q&amp;A<br>브랜드 스토리 확장</p>
+            </div>
+            <div class="tier tier--featured">
+              <span class="tier-badge">AI 차별화</span>
+              <span class="tier-name">PREMIUM</span>
+              <span class="tier-size">세로 60,000px+</span>
+              <p class="tier-desc">디럭스 전부 +<br>AI 제품샷·컨셉샷·모델샷</p>
+            </div>
+          </div>
+          <p class="tier-note">가격·작업기간은 분량에 따라 상담해 드립니다.</p>
+          <a href="#contact" class="hero-cta">제작 문의하기 →</a>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -174,6 +302,27 @@
       <p>&copy; 2026 Portfolio. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    (function () {
+      var tabs = document.querySelectorAll('.works-tab');
+      tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+          var target = tab.getAttribute('data-panel');
+          tabs.forEach(function (t) {
+            var on = t === tab;
+            t.classList.toggle('is-active', on);
+            t.setAttribute('aria-selected', on ? 'true' : 'false');
+          });
+          document.querySelectorAll('.works-panel').forEach(function (panel) {
+            var on = panel.id === target;
+            panel.classList.toggle('is-active', on);
+            panel.hidden = !on;
+          });
+        });
+      });
+    })();
+  </script>
 
 </body>
 </html>

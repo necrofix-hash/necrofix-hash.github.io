@@ -215,6 +215,8 @@ img { max-width: 100%; display: block; }
 .work-thumb-webbill   { background-image: url('images/thumb_04.jpg'); }
 .work-thumb-mute      { background-image: url('images/thumb_05.jpg'); }
 .work-thumb-fostory   { background-image: url('images/thumb_06.jpg'); }
+.work-thumb-aldore    { background-image: url('images/thumb_07.jpg'); }
+.work-thumb-obscura   { background-image: url('images/thumb_08.jpg'); }
 
 .work-info { padding: 0 4px; }
 

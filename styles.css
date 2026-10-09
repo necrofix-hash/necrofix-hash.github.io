@@ -538,6 +538,12 @@ img { max-width: 100%; display: block; }
   letter-spacing: 0.04em;
 }
 
+.site-footer .footer-biz {
+  font-family: inherit;
+  margin-bottom: 8px;
+  letter-spacing: 0;
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
   .container { padding: 0 24px; }
